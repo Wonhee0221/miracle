@@ -56,7 +56,7 @@ class Bottom extends StatelessWidget{
               size: 20,
             ),
             child: Text(
-              '회원가입',
+              '마이페이지',
               style: TextStyle(fontSize: 9),
             ),
           ),

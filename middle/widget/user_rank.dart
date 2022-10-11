@@ -29,7 +29,7 @@ class _UserRankState extends State<UserRank> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 250,
+      height: 300,
       child: ListView(
           shrinkWrap: true,
           scrollDirection: Axis.vertical,
