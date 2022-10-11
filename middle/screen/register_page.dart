@@ -25,7 +25,7 @@ class _RegisterPageState extends State<RegisterPage>{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('회원가입'),backgroundColor: Colors.amber,),
+      appBar: AppBar(title: Text('회원가입'),backgroundColor: Colors.amber,centerTitle: true,),
       body: Container(
         padding: EdgeInsets.all(24),
         child: SingleChildScrollView(
@@ -35,7 +35,6 @@ class _RegisterPageState extends State<RegisterPage>{
                 emailInput(),
                 passwordInput(),
                 registerButton(),
-                cancelButton(),
                 resultMessage(),
               ],
             ),
@@ -76,7 +75,7 @@ class _RegisterPageState extends State<RegisterPage>{
           child: ElevatedButton(
             style: ElevatedButton.styleFrom(
               shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-              backgroundColor: Colors.lightGreenAccent,
+              backgroundColor: Colors.amber,
               foregroundColor: Colors.black,
               fixedSize: Size(300, 100),
             ),
@@ -107,7 +106,7 @@ class _RegisterPageState extends State<RegisterPage>{
           child: ElevatedButton(
             style: ElevatedButton.styleFrom(
               shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-              backgroundColor: Colors.green,
+              backgroundColor: Colors.amber,
               foregroundColor: Colors.black,
               fixedSize: Size(300, 100),
             ),
